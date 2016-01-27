@@ -295,7 +295,7 @@ background: #fff;
 
 .career {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -319,7 +319,7 @@ background: #fff;
 
 .prof {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -345,7 +345,7 @@ background: #fff;
 
 .contact-info {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -959,6 +959,19 @@ p.error{
     line-height: 0.9;
 }
 
+#Thanks .sns__share{
+    width: 830px;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    top: 280px;
+    font-family: "ヒラギノ角ゴ Pro W6","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 12px;
+    line-height: 0.9;
+}
+
 #Thanks h2 {
     font-family: "ヒラギノ角ゴ Pro W6","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
     font-size: 20px;
@@ -1485,7 +1498,7 @@ background: #fff;
     
 .career {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -1509,7 +1522,7 @@ background: #fff;
 
 .prof {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -1535,7 +1548,7 @@ background: #fff;
 
 .contact-info {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -2348,13 +2361,145 @@ p.error{
 
 
 
+/******************************
+
+ソーシャルエリア全体を囲む要素
+* 他のコンテンツと距離を取りたい場合は[margin]を設定して下さい
+
+******************************/
+.social-area-syncer {
+    width: 100% ;
+    min-height: 190px ;
+    background: #F5F1E9 ;	/* 背景色 */
+    padding: 1.5em 0 ;
+}
+
+/* デスクトップPCでは高さを拡張する */
+@media screen and ( min-width:480px ) {
+    
+    .social-area-syncer {
+        min-height: 119px;
+    }
+    
+    ul.social-button-syncer {
+        width: 410px;
+    }
+}
 
 
 
 
+/******************************
+
+[li]要素
+
+******************************/
+ul.social-button-syncer li {
+    float: left ;
+    text-align: center ;
+    height: 71px ;
+    margin: 0 8px ;
+    padding:0 ;
+}
 
 
+/******************************
 
+各種ボタン
+
+******************************/
+/* [Twitter] */
+.sc-tw {
+    width: 71px ;
+}
+
+.sc-tw svg {
+    width: 30px ;
+    height: 30px ;
+}
+
+.sc-tw a {
+    height: 56px ;
+    margin: 0 auto ;
+    padding-top: 6px ;
+    display: block ;
+    background: #1B95E0 ;
+    font-size: 12px ;
+    color: #fff ;
+    font-weight: 700 ;
+    text-decoration: none ;
+    letter-spacing: .5px ;
+    border-radius: 2px ;
+}
+
+.sc-tw a span{
+    display: initial;
+}
+
+
+.sc-tw a:hover {
+    color: #fff ;
+    background: #0c7abf ;
+}
+
+.sc-tw span:before {
+    white-space: pre ;
+    content: '\A' ;
+}
+
+/* [Facebook] */
+.sc-fb {
+    z-index: 99 ;
+    width: 69px ;
+}
+
+.sc-fb a{
+    text-decoration: none;
+}
+
+.pluginButton a
+
+/* [LINE] */
+.sc-li {
+    width: 50px ;
+}
+
+.sc-li-img {
+    border: none ;
+    margin: 0 auto ;
+    padding:0 ;
+    width: 36px ;
+    height: 60px ;
+}
+
+/* デスクトップPCではLINEボタンを表示しない */
+@media screen and ( min-width:480px ) {
+    .sc-li {
+        display: none ;
+    }
+}
+
+
+.facebook-btn{
+    display: inline-block;
+    margin:  0 0 0 0;
+    padding: 10px 12px 7px;
+    background: #4562b6;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.facebook-btn span{
+    display: block;
+    width: 50px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.fa-facebook-square:before{
+    content:url("../images/fb_share_25x24.png");
+}
 
 
 /*----------------------------------------------*/
@@ -2679,7 +2824,7 @@ background: #fff;
     
 .career {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -2703,7 +2848,7 @@ background: #fff;
 
 .prof {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -2729,7 +2874,7 @@ background: #fff;
 
 .contact-info {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -3877,7 +4022,7 @@ background: #fff;
     
 .career {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -3901,7 +4046,7 @@ background: #fff;
 
 .prof {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -3927,7 +4072,7 @@ background: #fff;
 
 .contact-info {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -4734,6 +4879,24 @@ p.error{
 
     
  }
+    
+    
+
+    /******************************
+
+    [ul]要素
+
+    ******************************/
+    /* スマホ */
+    ul.social-button-syncer {
+        width: 95%;
+        margin: 0px auto;
+        padding: 0;
+        border: none;
+        list-style-type: none;
+    }
+
+
 }
 
 
@@ -5103,7 +5266,7 @@ background: #fff;
 
 .prof {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -5129,7 +5292,7 @@ background: #fff;
 
 .contact-info {
     margin: 35px 0 0 0;
-    padding: : 0;
+    padding: 0;
     overflow: hidden;
     display:block;
     clear:both;
@@ -5793,8 +5956,135 @@ p.error{
     top: 10px;
 } 
 
+#Thanks .sns__share{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    top: 0;
+    font-family: "ヒラギノ角ゴ Pro W6","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 12px;
+    line-height: 0.9;
+}
+
+.social-area-syncer {
+    min-height: 70px;
+}
+     
+    
+ul.social-button-syncer li {
+    margin:0 2px;
+}
+    
+    
+    
+    /******************************
+
+    各種ボタン
+
+    ******************************/
+    /* [Twitter] */
+    .sc-tw {
+        width: 64px ;
+    }
+
+    .sc-tw svg {
+        width: 30px ;
+        height: 30px ;
+    }
+
+    .sc-tw a {
+        height: 56px ;
+        margin: 0 auto ;
+        padding-top: 6px ;
+        display: block ;
+        background: #1B95E0 ;
+        font-size: 12px ;
+        color: #fff ;
+        font-weight: 700 ;
+        text-decoration: none ;
+        letter-spacing: .5px ;
+        border-radius: 2px ;
+    }
+
+    .sc-tw a span{
+        display: initial;
+    }
 
 
+    .sc-tw a:hover {
+        color: #fff ;
+        background: #0c7abf ;
+    }
+
+    .sc-tw span:before {
+        white-space: pre ;
+        content: '\A' ;
+    }
+
+    /* [Facebook] */
+    .sc-fb {
+        z-index: 99 ;
+        width: 65px ;
+    }
+
+    .sc-fb a{
+        text-decoration: none;
+    }
+
+    .pluginButton a
+
+    /* [LINE] */
+    .sc-li {
+        width: 50px ;
+    }
+
+    .sc-li-img {
+        border: none ;
+        margin: 0 auto ;
+        padding:0 ;
+        width: 36px ;
+        height: 60px ;
+    }
+
+    /* デスクトップPCではLINEボタンを表示しない */
+    @media screen and ( min-width:480px ) {
+        .sc-li {
+            display: none ;
+        }
+    }
+
+
+    .facebook-btn{
+        display: inline-block;
+        margin:  0 0 0 0;
+        padding: 10px 12px 7px;
+        background: #4562b6;
+        border-radius: 2px;
+        color: #fff;
+    }
+
+    .facebook-btn span{
+        display: block;
+        width: 41px;
+        font-size: 12px;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .fa-facebook-square:before{
+        content:url("../images/fb_share_25x24.png");
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
